@@ -8,12 +8,12 @@ body{
     background-image: url("assets/images/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px,100vw);
-    height: 70vh;
+    background-size: max(1000px,100vw);
+    height: 85vh;
     position: relative;
 }
 .main .box{
-    height: 70vh;
+    height: 85vh;
     width: 100%;
     opacity: 0.6;
     position: absolute;
@@ -27,6 +27,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 62px;
+    padding: 10px;
 }
 nav img{
     width: 114px;
@@ -37,7 +38,11 @@ nav button{
     position: relative;
     z-index: 10;
 }
-.page1{
+.btn{
+    display: flex;
+    gap: 10px;
+}
+.start{
     height: 100%;
     display: flex;
     align-items: center;
@@ -49,22 +54,39 @@ nav button{
     position: relative;
     font-family: sans-serif;
     font-size: 23px;
+    overflow:hidden;
 }
-.page1 p{
+.start h1{
+    font-weight: 1000;
+
+}
+.start p{
     font-family: sans-serif;
     margin: 1rem 0 0;
     font-size: 21px;
     font-weight: 400;
 }
+.start.content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.start.content2{
+    margin-bottom: 100px;
+}
 #btn1{
     padding:8px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color:white;
+    opacity: 0.6;
+    border-color: rgb(196, 194, 194);
     width: 70px;
-    border: none;
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    font-family: sans-serif;
+    
 }
 #btn2{
     padding:8px;
@@ -75,21 +97,29 @@ nav button{
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    font-family: sans-serif;
 }
-form #input{
-    background-color:black;
-    filter: opacity(0.6);
-    color: white;
-    padding: 18px;
-    width: 300px;
+.content2{
+    display: flex;
+    gap:10px;
+}
+.content2 #input{
+    background-color:rgba(23, 23,23, 0.7);
+    /* filter: opacity(0.6); */
+    color: rgb(255, 255, 255);
+    padding:16px;
+    width: 350px;
     border-radius: 0.25rem;
-    border-color: white;
+    border:1px solid rgb(150, 148, 148);
     justify-content: center;
     align-items: center;
     margin: 1rem 0 0;
+    font-weight: 550;
+    font-size: 18px;
+    font-family: sans-serif;
+    z-index: -1;
 }
-
-form #startbtn{
+.content2 #startbtn{
     cursor: pointer;
     background-color: red;
     color: white;
@@ -97,25 +127,26 @@ form #startbtn{
     border: none;
     font-size: 22px;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     align-items: center;
-    padding:15px;
+    padding:15px 10px 12px 12px;
     margin: 1rem 0 0;
     border-radius: 0.25rem;
     width: 180px;
-    background-image: url("assets/images/start.svg");
-    background-repeat: no-repeat;
-    background-position: center right;
-    position: relative;
+    font-weight: 500;
+}
+.line-first{
+    background-color: rgb(35,35,35);
+    height: 0.5rem;
+    width: 100%;
+    bottom: -0.5rem;
+    position: absolute;
 }
 .line{
     background-color: rgb(35,35,35);
-    width: 100%;
-    height: 0.5rem;
-    position: absolute;
-    bottom: -0.5rem;
+    height: 7px;
 }
-.page2{
+.text{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -124,5 +155,75 @@ form #startbtn{
     font-family: sans-serif;
     font-size: 23px;
     margin: auto;
-    max-width: calc( 100% - 3rem );
+    gap: 20px;
 }
+.text h2{
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    padding: 70px 70px;
+
+}
+.image{
+   position: relative;
+}
+.image img{
+    width: 30vw;
+    position: relative;
+}
+.image video{
+    position: absolute;
+    width: 460px;
+}
+.image .video{
+    width: 300px;
+    right: 18%;
+    top: 10%;
+}
+.first .box{
+    width: 28vw;
+    height: 10vh;
+    border: 1px solid rgb(173, 171, 171);
+    border-radius: 10px;
+    bottom: 8%;
+    position: absolute;
+    overflow: hidden;
+    background-color: black;
+}
+.box{
+    display: flex;
+    gap: 100px;
+}
+.box img{
+    width: 50px;
+    height: 60px;
+    padding: 10px 10px 20px 20px;
+    position: relative;
+}
+.box .label{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.box .label h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    
+}
+.box .label p{
+    color: #0071eb;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+
