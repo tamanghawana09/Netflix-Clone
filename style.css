@@ -225,5 +225,50 @@ nav button{
     font-weight: lighter;
     font-size: 12px;
 }
-
-
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+.faq .text h3{
+    padding: 40px 0px 20px 0px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.faq .faqbox{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+}
+.faqbox button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+    padding: 5px 20px;
+    height: 80px;
+    background-color: #2D2D2D;
+    font-family: sans-serif;
+    font-size: 24px;
+    width: 70vw;
+    cursor: pointer;
+    justify-content: space-between;
+    border: none;
+    margin: 5px;
+}
+.faq p{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    font-size: 20px;
+}
+.faq .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
